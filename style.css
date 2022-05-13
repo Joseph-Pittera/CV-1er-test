@@ -1,0 +1,87 @@
+/* ajout de polices spécifiques */
+@font-face {
+  font-family: "Aaargh";
+  src: url(Police/Aaargh.ttf) format("truetype");
+  font-family: "2Dumb";
+  src: url(Police/2Dumb.ttf) format("truetype");
+  font-family: "3Dumb";
+  src: url(Police/3Dumb.ttf) format("truetype");
+}
+
+/* ajout de la police et du background à toute la page */
+body{
+  font-family: "Aaargh";
+  background-image: url("image/im1.jpg");
+}
+
+h2 {
+  font-size: 1.1em;
+  line-height: 0em;
+  margin-top: 10px;
+}
+ul{
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+/* fixe le header en haut de page */
+header{
+  position: fixed;
+  top: 2;
+  width: 100%;
+  height: 180px;
+}
+/* fixe le reste de la page sous le header */
+section{
+  position: fixed;
+  top: 180px;
+  height: 560px; /* définit la hauteur pour l'auto-scroll */
+  overflow: auto; /* active l'auto scroll */
+  text-align: justify;
+  padding-right: 5px; /* marge intérieure droite */
+}
+
+.conteneur2,
+.conteneur3,
+.conteneur4,
+.conteneur5,
+.conteneur6,
+.conteneur7,
+.conteneur8,
+.conteneur9 {
+  display: flex;
+}
+
+.conteneur3,
+.conteneur6,
+.conteneur8 {
+  border-bottom: 20px solid rgba(255, 255, 255, 0);
+}
+
+.infoPerso{
+  float: left;
+}
+.titre {
+  text-align: center;
+  width: 100%;
+  min-width: 500px;
+  max-width: 1200px;
+}
+
+.colGauche {
+  width: 200px;
+  min-width: 180px;
+}
+.colDroite {
+  width: 80%;
+  min-width: 500px;
+}
+
+.titre h1 {
+  color: rgb(120, 113, 183);
+  font-size: 2em;
+  text-shadow: 1px 1px 1px grey;
+}
+.titre h2 {
+  line-height: 1em;
+}
